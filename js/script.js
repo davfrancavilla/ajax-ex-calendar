@@ -46,8 +46,8 @@ $(document).ready(function(){
     // funzione per creazione di tutti i giorni del mese tramite handlebars
     function createDaysList(startingMonth){
         $("#days").html("");
-        source = $("#days-template").html();
-        template = Handlebars.compile(source);
+        var source = $("#days-template").html();
+        var template = Handlebars.compile(source);
         var monthLength = startingMonth.daysInMonth();
         for (var i = 1; i <= monthLength; i++) {
             var element = {
