@@ -14,7 +14,10 @@ $(document).ready(function(){
             createDaysList(startingMonth);
             apiCall(startingMonth);
         } else {
-            alert('Fine calendario');
+            startingMonth = moment().set({ 'year': 2018, 'month': 0, 'date': 1 });
+            createTitle(startingMonth);
+            createDaysList(startingMonth);
+            apiCall(startingMonth);
         }
     });
 
@@ -26,7 +29,10 @@ $(document).ready(function(){
             createDaysList(startingMonth);
             apiCall(startingMonth);
         } else {
-            alert('Fine calendario');
+            startingMonth = moment().set({ 'year': 2018, 'month': 11, 'date': 1 });
+            createTitle(startingMonth);
+            createDaysList(startingMonth);
+            apiCall(startingMonth);
         }
     });
 

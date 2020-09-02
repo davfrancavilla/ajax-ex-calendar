@@ -18,7 +18,7 @@
         <div id="title"></div>
         <i class="fas fa-arrow-alt-circle-right next-month"></i>
            
-        <ul id="days"></ul>
+        <div id="days"></div>
     </div>
 
 
@@ -27,7 +27,7 @@
         <span>{{ month }} {{ year }}</span>
     </script>
     <script id="days-template" type="text/x-handlebars-template">
-        <li date="{{date}}">{{ number }} {{ month }}</li>
+        <div class="date" date="{{date}}">{{ number }} {{ month }}</div>
     </script>
 
     
